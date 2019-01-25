@@ -27,6 +27,12 @@ header {
     h2 {
         font-size: 1.2rem;
         font-weight: $normalWeight;
+        display: none;
+    }
+
+    img {
+        height: 75px;
+        float: left;
     }
 }
 
@@ -87,6 +93,22 @@ main {
         color: $primaryColor;
     }
 
+    h2 {
+        font-size: 1.5rem;
+        margin: .75rem 0 0 $gutter;
+        color: lighten($primaryColor, 10%);
+    }
+
+    h3{
+        font-size: 1.2rem;
+        color: lighten($primaryColor, 20%);
+    }
+
+    p {
+        line-height: 130%;
+        color: $fontColor;
+    }
+
     hr.fadeAway {
         background: linear-gradient(to right, rgba(0,0,10,1) 0%,rgba(0,0,10,0.99) 1%,rgba(41,137,216,0.5) 50%,rgba(32,124,202,0.49) 51%,rgba(125,185,232,0) 100%);
         height: 2px;
@@ -125,6 +147,11 @@ footer {
         text-decoration: none;
         color: $secondaryColor;
     }
+}
+
+div.blog article {
+    margin: .5rem $gutter;
+    width:  100%-$gutterdbl;
 }
 
 
